@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="grafico.css" />
+    <title>Cadastro - Lucas Sanches</title>
+</head>
+<script>
+        function envio() {
+        var r = confirm("Tem certeza que deseja enviar as informações e ser redirecionado para páginaa inicial?");
+           if (r == true) {
+               cadastro.submit();
+            }
+        }
+</script>
+<body>
+    <h2>Página Lucas Sanches ®</h2>
+    <hr>
+    <nav>
+        <ul class="menu">
+            <li><a href="inicio.html">Home</a></li>
+            <li><a href="#">Sobre Lucas</a></li>
+            <li><a href="#">Quem sou eu?</a>
+        <ul>
+            <li><a href="#">Mercado de Trabalho</a></li>
+            <li><a href="#">Formação academica</a></li>
+            <li><a href="#">Vida Pessoal</a></li>                    
+        </ul>
+            </li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>             
+        </ul>
+        </nav>
+    </br></br></br></br></br>
+    <center><h1>Formulário para cadastro:</h1></center>
+    <div class="formcad">
+        <form action="inicio.html" method="GET" name="cadastro" class="formcad">
+            <h2>Login:</h2>
+            <strong>*Usuário:</strong>
+            <input type="text" maxlength="30" placeholder="Usuário"size="30" name="usuario"/></p>
+            <strong>*Senha:</strong>
+            <input type="password" maxlength="8" placeholder="Digite sua senha" size="30" name="senha"></p>
+            Data de nascimento:
+            <input type="date" name="data"></p>
+            <strong>*E-mail:</strong>
+            <input type="email" placeholder="e-mail" name="e-mail"/></p>
+            Upload de arquivo:</br>
+            <input type="file"/></p>
+            <input type="submit" src="inicio.html" value="Enviar" onclick="envio();">
+        </form>
+    </div>
+</body>
+</html>
